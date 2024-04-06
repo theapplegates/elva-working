@@ -2,7 +2,7 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: var(--code-default);
     background: none;
-    font-family: var(--font-mono);
+    font-family: var(GeistMonoVF);
     text-align: left;
     white-space: pre;
     word-spacing: normal;
