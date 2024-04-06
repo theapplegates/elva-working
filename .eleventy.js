@@ -19,7 +19,8 @@ const { formatDate } = require('./src/_config/filters/dates');
 // 11ty -----------------------------------------------
 
 module.exports = eleventyConfig => {
-    eleventyConfig.addPassthroughCopy("font.woff2");
+    eleventyConfig.addPassthroughCopy("GeistVF.woff2");
+    eleventyConfig.addPassthroughCopy("GeistMonoVF.woff2");
 
     // Global Settings --------------------------------
 
