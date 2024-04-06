@@ -12,7 +12,7 @@ body {
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-base);
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     line-height: 1.4;
     letter-spacing: var(--tracking);
     transition: background var(--transition-base), color var(--transition-base);
@@ -267,10 +267,12 @@ figure > figcaption::selection {
 
 body {
     display: flex;
+    font-size: var(--step--1);
     flex-direction: column;
 }
 
 #content {
+    font-size: var(--step--1);
     padding: var(--space-m-3xl);
     flex-grow: 1;
 }
