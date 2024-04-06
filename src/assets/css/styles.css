@@ -122,7 +122,7 @@ h6 {
 }
 
 blockquote:not([class]) {
-    font-family: var(--font-serif);
+    font-family: var(--font-base);
     font-size: var(--step-1);
 }
   
@@ -313,7 +313,7 @@ body {
     display: flex;
     gap: var(--space-s-l);
     align-items: center;
-    font-family: var(--font-headings);
+    font-family: var(--font-base);
     flex-direction: column;
     font-weight: 500;
 }
@@ -490,13 +490,17 @@ a[aria-current="page"] {
     display: block;
 }
 
+/* @font-face */
 @font-face {
-  font-family: GeistVF;
+  font-family: 'GeistVF'; /* Main variable font declaration */
   src: url('/assets/fonts/geist/GeistVF.woff2') format('woff2');
+  font-weight: 100 400 900; /* Assuming the GeistVF file covers a wide weight range */
   font-display: swap;
 }
+
 @font-face {
-  font-family: GeistMonoVF;
-  src: url('/assets/fonts/geist-mono/GeistMonoVF.woff2') format('woff2');
-  font-display: swap;
+  font-family: 'GeistMonoVF'; 
+  src: url('/assets/fonts/geist-mono/GeistMonoVF.woff2') format('woff2'); 
+  font-weight: 400; /* Or the appropriate weight for GeistMonoVF */
+  font-display: swap; 
 }
